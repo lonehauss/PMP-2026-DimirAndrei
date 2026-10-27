@@ -1,0 +1,14 @@
+digraph tests {
+	rankdir=LR
+	Difficult [shape=circle]
+	Medium [shape=circle]
+	Easy [shape=circle]
+	Difficult -> Medium [label=0.50]
+	Difficult -> Easy [label=0.50]
+	Medium -> Difficult [label=0.50]
+	Medium -> Medium [label=0.25]
+	Medium -> Easy [label=0.25]
+	Easy -> Difficult [label=0.50]
+	Easy -> Medium [label=0.25]
+	Easy -> Easy [label=0.25]
+}
